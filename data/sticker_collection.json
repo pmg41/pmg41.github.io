@@ -1,0 +1,875 @@
+{
+	"info": {
+		"_postman_id": "0cc5de84-7ad5-463f-83d0-15e6bacd421b",
+		"name": "sticker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "application Copy",
+			"item": [
+				{
+					"name": "applicationList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/applicationList",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"applicationList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "applicationAdd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"1\",\n    \"bundle_name\":\"2\",\n    \"unique_id\":\"3\",\n    \"logo\":\"4\",\n    \"image\":\"5\",\n    \"status\":\"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/applicationAdd",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"applicationAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "applicationupdate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"1\",\n    \"bundle_name\":\"2\",\n    \"unique_id\":\"3\",\n    \"logo\":\"4\",\n    \"image\":\"5\",\n    \"status\":\"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/applicationupdate/26",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"applicationupdate",
+								"26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "applicationDeletebyID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/application/applicationDeletebyID/28",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"applicationDeletebyID",
+								"28"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "applicationDetailbyID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"26\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/applicationDetailbyID",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"applicationDetailbyID"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user_device Copy",
+			"item": [
+				{
+					"name": "user_deviceList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/application/user_deviceList",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"user_deviceList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user_deviceAdd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"app_id\":\"1\",\n    \"firebase_token\":\"1\",\n    \"device_detail\":\"1\",\n    \"status\":\"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/user_deviceAdd",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"user_deviceAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user_deviceupdate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"app_id\":\"1\",\n    \"firebase_token\":\"1\",\n    \"device_detail\":\"1\",\n    \"status\":\"active\",\n    \"id\":\"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/user_deviceupdate",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"user_deviceupdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user_deviceDeletebyID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"5\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/user_deviceDeletebyID",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"user_deviceDeletebyID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/application/user_deviceDetailbyID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/user_deviceDetailbyID",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"user_deviceDetailbyID"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "languages Copy",
+			"item": [
+				{
+					"name": "languageList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/application/languageList",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"languageList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "languageAdd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"1\",\n    \"status\":\"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/languageAdd",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"languageAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "languageupdate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"1\",\n    \"status\":\"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/languageupdate/5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"languageupdate",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "languageDeletebyID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/application/languageDeletebyID/5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"languageDeletebyID",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "languageDetailbyID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/application/languageDetailbyID/26",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"languageDetailbyID",
+								"26"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "image Copy",
+			"item": [
+				{
+					"name": "imageDeletebyID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/application/imageDeletebyID/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"imageDeletebyID",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "imageupdate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"app_id\":\"1\",\n    \"language_id\":\"2\",\n    \"image\":\"3\",\n    \"serial_no\":\"4\",\n    \"status\":\"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/imageupdate/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"imageupdate",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "imageAdd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"app_id\":\"1\",\n    \"language_id\":\"2\",\n    \"image\":\"3\",\n    \"serial_no\":\"4\",\n    \"status\":\"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/imageAdd",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"imageAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "imageDetailbyID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"app_id\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/imageDetailbyID",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"imageDetailbyID"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "stickers Copy",
+			"item": [
+				{
+					"name": "stickerDeletebyID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/application/stickerDeletebyID/27",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"stickerDeletebyID",
+								"27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "stickerupdate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"size\":\"1\",\n    \"app_id\":\"2\",\n    \"logo\":\"3\",\n    \"image\":\"4\",\n    \"status\":\"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/stickerupdate/27",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"stickerupdate",
+								"27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "stickerAdd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pack_id\":\"23\",\n    \"size\":\"20\",\n    \"app_id\":\"29\",\n    \"logo\":\"2\",\n    \"image\":\"2.jpg\",\n    \"status\":\"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/stickerAdd",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"stickerAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "stickerDetailbyID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pack_id\":\"23\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/stickerDetailbyID",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"stickerDetailbyID"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "packs Copy",
+			"item": [
+				{
+					"name": "packupdate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"1\",\n    \"pack_size\":\"1\",\n    \"image\":\"1\",\n    \"status\":\"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/packupdate/13",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"packupdate",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "packAdd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"1\",\n    \"app_id\":\"1\",\n    \"pack_size\":\"1\",\n    \"image\":\"1\",\n    \"status\":\"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/packAdd",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"packAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "packDeletebyID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/application/packDeletebyID/13",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"packDeletebyID",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "packDetailbyID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"app_id\":\"28\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/packDetailbyID",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"packDetailbyID"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "qoute Copy",
+			"item": [
+				{
+					"name": "quoteAdd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"app_id\":\"1\",\n    \"language_id\":\"1\",\n    \"quote\":\"1\",\n    \"serial_no\":\"1\",\n    \"status\":\"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/quoteAdd",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"quoteAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "quoteupdate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"app_id\":\"3\",\n    \"language_id\":\"1\",\n    \"quote\":\"1\",\n    \"serial_no\":\"1\",\n    \"status\":\"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/quoteupdate/6",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"quoteupdate",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "quoteDeletebyID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/application/quoteDeletebyID/7",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"quoteDeletebyID",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "quoteDetailbyID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"app_id\":\"27\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/application/quoteDetailbyID",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"application",
+								"quoteDetailbyID"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
